@@ -5,21 +5,26 @@
     padding: 0px;
 }
 
-@import url('https://fonts.googleapis.com/css2? family= Sriracha & display=swap');
+@font-face {
+    font-family: 'sriracha';
+    src: url(../fontes/Sriracha-Regular.ttf) format(opentype);
+}
 
-@import url('https://fonts.googleapis.com/css2? family= Passion+One & display=swap');
-
+@font-face {
+    font-family: 'passion one';
+    src: url(../fontes/PassionOne-Regular.ttf) format(opentype);
+}
 
 
  :root{
     --fonte01: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte02:'Sriracha', cursive ;
+    --fonte02:'sriracha' ;
     --fonte03: 'Passion One', sans-serif;
  }
 
 html, body{
     min-height: 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte01);
 }
 
 header{
@@ -52,7 +57,7 @@ section{
     padding-top:10vh ;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 0;
+    padding-left: 30px;
     font-family:var(--fonte03);
     font-size: 3,5vh;
 }
@@ -68,7 +73,6 @@ section.normal{
 }
 
 section > p{
-    margin-left: 15vh;
     padding-bottom: 2em;
 }
 section.imagem{
